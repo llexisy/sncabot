@@ -19,7 +19,7 @@ def getrealdur(dur):
 intents = discord.Intents.default()
 intents.message_content = True
 
-bot = discord.Bot(intents=intents)
+bot = discord.Client(intents=intents)
 
 @bot.event
 async def on_ready():
